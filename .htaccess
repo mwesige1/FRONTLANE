@@ -1,0 +1,11 @@
+RewriteEngine On
+# 1. Old domain -> new domain, same path (301)
+RewriteCond %{HTTP_HOST} ^(www\.)?frontlanemedicalcenter\.site$ [NC]
+RewriteRule ^(.*)$ https://frontlanemedicalcenter.com/$1 [R=301,L]
+# 2. www -> non-www
+RewriteCond %{HTTP_HOST} ^www\.frontlanemedicalcenter\.com$ [NC]
+RewriteRule ^(.*)$ https://frontlanemedicalcenter.com/$1 [R=301,L]
+# 3. Force https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://frontlanemedicalcenter.com/$1 [R=301,L]
+ErrorDocument 404 /404.html

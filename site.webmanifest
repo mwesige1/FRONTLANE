@@ -1,0 +1,21 @@
+{
+  "name": "Frontlane Medical Center",
+  "short_name": "Frontlane",
+  "description": "Safe abortion clinic in Kampala offering medical abortion, surgical abortion, and reproductive healthcare services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/images/frontlane.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["medical", "health", "lifestyle"],
+  "lang": "en",
+  "scope": "/",
+  "orientation": "portrait-primary"
+}
